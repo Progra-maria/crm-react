@@ -1,0 +1,68 @@
+{
+  "clientes": [
+    {
+      "nombre": "María",
+      "empresa": "eci",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "649743045",
+      "notas": "mmmmmm",
+      "id": 1
+    },
+    {
+      "nombre": "María",
+      "empresa": "eci",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "649743045",
+      "notas": "mmmmmm",
+      "id": 2
+    },
+    {
+      "nombre": "Maria",
+      "empresa": "NEW FOLDER STUDIO SL",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "917242819",
+      "notas": "",
+      "id": 3
+    },
+    {
+      "nombre": "Maria",
+      "empresa": "NEW FOLDER STUDIO SL",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "917242819",
+      "notas": "",
+      "id": 4
+    },
+    {
+      "nombre": "Maria",
+      "empresa": "MARÍA CARRASCO CASTILLA",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "649743045",
+      "notas": "",
+      "id": 5
+    },
+    {
+      "nombre": "maría",
+      "empresa": "NEW FOLDER STUDIO SL",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "917242819",
+      "notas": "",
+      "id": 6
+    },
+    {
+      "nombre": "MARIA",
+      "empresa": "NEW FOLDER STUDIO",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "649743045",
+      "notas": "",
+      "id": 7
+    },
+    {
+      "nombre": "MARIA",
+      "empresa": "NEW FOLDER STUDIO SL",
+      "email": "maria.carrasco@thenewfolder.com",
+      "telefono": "917242819",
+      "notas": "",
+      "id": 8
+    }
+  ]
+}
