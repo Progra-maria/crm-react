@@ -1,6 +1,7 @@
 import {useNavigate} from 'react-router-dom'
 
-const Cliente = ({cliente}) => {
+
+const Cliente = ({cliente, handleEliminar}) => {
 const navigate = useNavigate()
 
     const {nombre, empresa, email, telefono, id, notas} = cliente
@@ -18,10 +19,10 @@ const navigate = useNavigate()
                 onClick={() => navigate(`/clientes/${id}`)}
                 >Ver</button>
                 <button className="bg-blue-100 hover:bg-blue-300 block w-full text-blue-900 text-bold m-3 p-2  rounded-md"
-                type="button"
+                type="button" onClick={()=>navigate(`/clientes/editar/${id}`)}
                 >Editar</button>
                 <button className="bg-red-100 hover:bg-red-300 block w-full text-red-900 text-bold m-3 p-2 rounded-md"
-                type="button"
+                type="button" onClick={()=>handleEliminar(id)}
                 >Eliminar</button>
             </td>
         </tr>

@@ -17,6 +17,25 @@ const Inicio = () => {
         }
         obtenerClientesAPI()
     },[])
+
+    const handleEliminar = async id =>{
+        const confirmar= confirm('¿Quieres eliminar este registro? Esta acción no se pude deshacer')
+
+        if (confirmar){
+            try {
+                const url = `http://localhost:4000/clientes/${id}`
+                const respuesta = await fetch(url, {
+                    method:'DELETE'
+                })
+                await respuesta.json()
+                const arrayClientes = clientes.filter(cliente => cliente.id !== id)
+                setClientes(arrayClientes)
+            } catch (error) {
+                console.log(error)
+            }
+            // no location.reload(), usamos useState!!!
+        }
+    }   
     return (
         <>
         <h1 className='font-black text-cyan-600 text-4xl'>Clientes</h1>
@@ -35,6 +54,7 @@ const Inicio = () => {
                         <Cliente 
                         key= {cliente.id}
                         cliente = {cliente}
+                        handleEliminar = {handleEliminar}
                         />
                     )
                     )}
